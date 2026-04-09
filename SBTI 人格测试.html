@@ -1,0 +1,945 @@
+<!DOCTYPE html>
+<html lang="zh-CN"><head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SBTI 人格测试</title>
+  <link rel="stylesheet" href="main.css">
+</head>
+<body>
+  <div class="shell">
+    <section id="intro" class="screen active">
+      <div class="hero card hero-minimal">
+        <h1>MBTI已经过时，SBTI来了。</h1>
+        <div class="hero-actions hero-actions-single">
+          <button id="startBtn" class="btn-primary">开始测试</button>
+        </div>
+      </div>
+    </section>
+
+    <section id="test" class="screen">
+      <div class="test-wrap card">
+        <div class="topbar">
+          <div class="progress"><span id="progressBar" style="width: 0%;"></span></div>
+          <div class="progress-text" id="progressText">0 / 31</div>
+        </div>
+
+        <div id="questionList" class="question-list"><article class="question">
+          <div class="question-meta">
+            <div class="badge">第 1 题</div>
+            <div>维度已隐藏</div>
+          </div>
+          <div class="question-title">快考试了，学校规定必须上晚自习，请假会扣分，但今晚你约了女/男神一起玩《绝地求生：刺激战场》（一款刺激的游戏），你怎么办？</div>
+          <div class="options">
+            
+                <label class="option">
+                  <input type="radio" name="q15" value="1">
+                  <div class="option-code">A</div>
+                  <div>翘了！反正就一次！</div>
+                </label>
+              
+                <label class="option">
+                  <input type="radio" name="q15" value="2">
+                  <div class="option-code">B</div>
+                  <div>干脆请个假吧。</div>
+                </label>
+              
+                <label class="option">
+                  <input type="radio" name="q15" value="3">
+                  <div class="option-code">C</div>
+                  <div>都快考试了还去啥。</div>
+                </label>
+              
+          </div>
+        </article><article class="question">
+          <div class="question-meta">
+            <div class="badge">第 2 题</div>
+            <div>维度已隐藏</div>
+          </div>
+          <div class="question-title">恋爱后，对象非常黏人，你作何感想？</div>
+          <div class="options">
+            
+                <label class="option">
+                  <input type="radio" name="q11" value="1">
+                  <div class="option-code">A</div>
+                  <div>那很爽了</div>
+                </label>
+              
+                <label class="option">
+                  <input type="radio" name="q11" value="2">
+                  <div class="option-code">B</div>
+                  <div>都行无所谓</div>
+                </label>
+              
+                <label class="option">
+                  <input type="radio" name="q11" value="3">
+                  <div class="option-code">C</div>
+                  <div>我更喜欢保留独立空间</div>
+                </label>
+              
+          </div>
+        </article><article class="question">
+          <div class="question-meta">
+            <div class="badge">第 3 题</div>
+            <div>补充题</div>
+          </div>
+          <div class="question-title">您平时有什么爱好？</div>
+          <div class="options">
+            
+                <label class="option">
+                  <input type="radio" name="drink_gate_q1" value="1">
+                  <div class="option-code">A</div>
+                  <div>吃喝拉撒</div>
+                </label>
+              
+                <label class="option">
+                  <input type="radio" name="drink_gate_q1" value="2">
+                  <div class="option-code">B</div>
+                  <div>艺术爱好</div>
+                </label>
+              
+                <label class="option">
+                  <input type="radio" name="drink_gate_q1" value="3">
+                  <div class="option-code">C</div>
+                  <div>饮酒</div>
+                </label>
+              
+                <label class="option">
+                  <input type="radio" name="drink_gate_q1" value="4">
+                  <div class="option-code">D</div>
+                  <div>健身</div>
+                </label>
+              
+          </div>
+        </article><article class="question">
+          <div class="question-meta">
+            <div class="badge">第 4 题</div>
+            <div>维度已隐藏</div>
+          </div>
+          <div class="question-title">突然某一天，我意识到人生哪有什么他妈的狗屁意义，人不过是和动物一样被各种欲望支配着，纯纯是被激素控制的东西，饿了就吃，困了就睡，一发情就想交配，我们简直和猪狗一样没什么区别。</div>
+          <div class="options">
+            
+                <label class="option">
+                  <input type="radio" name="q18" value="1">
+                  <div class="option-code">A</div>
+                  <div>是这样的。</div>
+                </label>
+              
+                <label class="option">
+                  <input type="radio" name="q18" value="2">
+                  <div class="option-code">B</div>
+                  <div>也许是，也许不是。</div>
+                </label>
+              
+                <label class="option">
+                  <input type="radio" name="q18" value="3">
+                  <div class="option-code">C</div>
+                  <div>这简直是胡扯</div>
+                </label>
+              
+          </div>
+        </article><article class="question">
+          <div class="question-meta">
+            <div class="badge">第 5 题</div>
+            <div>维度已隐藏</div>
+          </div>
+          <div class="question-title">我很清楚真正的自己是什么样的</div>
+          <div class="options">
+            
+                <label class="option">
+                  <input type="radio" name="q3" value="1">
+                  <div class="option-code">A</div>
+                  <div>不认同</div>
+                </label>
+              
+                <label class="option">
+                  <input type="radio" name="q3" value="2">
+                  <div class="option-code">B</div>
+                  <div>中立</div>
+                </label>
+              
+                <label class="option">
+                  <input type="radio" name="q3" value="3">
+                  <div class="option-code">C</div>
+                  <div>认同</div>
+                </label>
+              
+          </div>
+        </article><article class="question">
+          <div class="question-meta">
+            <div class="badge">第 6 题</div>
+            <div>维度已隐藏</div>
+          </div>
+          <div class="question-title">我和人相处主打一个电子围栏，靠太近会自动报警。</div>
+          <div class="options">
+            
+                <label class="option">
+                  <input type="radio" name="q27" value="3">
+                  <div class="option-code">A</div>
+                  <div>认同</div>
+                </label>
+              
+                <label class="option">
+                  <input type="radio" name="q27" value="2">
+                  <div class="option-code">B</div>
+                  <div>中立</div>
+                </label>
+              
+                <label class="option">
+                  <input type="radio" name="q27" value="1">
+                  <div class="option-code">C</div>
+                  <div>不认同</div>
+                </label>
+              
+          </div>
+        </article><article class="question">
+          <div class="question-meta">
+            <div class="badge">第 7 题</div>
+            <div>维度已隐藏</div>
+          </div>
+          <div class="question-title">我不够好，周围的人都比我优秀</div>
+          <div class="options">
+            
+                <label class="option">
+                  <input type="radio" name="q2" value="1">
+                  <div class="option-code">A</div>
+                  <div>确实</div>
+                </label>
+              
+                <label class="option">
+                  <input type="radio" name="q2" value="2">
+                  <div class="option-code">B</div>
+                  <div>有时</div>
+                </label>
+              
+                <label class="option">
+                  <input type="radio" name="q2" value="3">
+                  <div class="option-code">C</div>
+                  <div>不是</div>
+                </label>
+              
+          </div>
+        </article><article class="question">
+          <div class="question-meta">
+            <div class="badge">第 8 题</div>
+            <div>维度已隐藏</div>
+          </div>
+          <div class="question-title">我做事常常有计划，____</div>
+          <div class="options">
+            
+                <label class="option">
+                  <input type="radio" name="q24" value="1">
+                  <div class="option-code">A</div>
+                  <div>然而计划不如变化快。</div>
+                </label>
+              
+                <label class="option">
+                  <input type="radio" name="q24" value="2">
+                  <div class="option-code">B</div>
+                  <div>有时能完成，有时不能。</div>
+                </label>
+              
+                <label class="option">
+                  <input type="radio" name="q24" value="3">
+                  <div class="option-code">C</div>
+                  <div>我讨厌被打破计划。</div>
+                </label>
+              
+          </div>
+        </article><article class="question">
+          <div class="question-meta">
+            <div class="badge">第 9 题</div>
+            <div>维度已隐藏</div>
+          </div>
+          <div class="question-title">别人说你“执行力强”，你内心更接近哪句？</div>
+          <div class="options">
+            
+                <label class="option">
+                  <input type="radio" name="q23" value="1">
+                  <div class="option-code">A</div>
+                  <div>我被逼到最后确实执行力超强。。。</div>
+                </label>
+              
+                <label class="option">
+                  <input type="radio" name="q23" value="2">
+                  <div class="option-code">B</div>
+                  <div>啊，有时候吧。</div>
+                </label>
+              
+                <label class="option">
+                  <input type="radio" name="q23" value="3">
+                  <div class="option-code">C</div>
+                  <div>是的，事情本来就该被推进</div>
+                </label>
+              
+          </div>
+        </article><article class="question">
+          <div class="question-meta">
+            <div class="badge">第 10 题</div>
+            <div>维度已隐藏</div>
+          </div>
+          <div class="question-title">我渴望和我信任的人关系密切，熟得像失散多年的亲戚。</div>
+          <div class="options">
+            
+                <label class="option">
+                  <input type="radio" name="q28" value="1">
+                  <div class="option-code">A</div>
+                  <div>认同</div>
+                </label>
+              
+                <label class="option">
+                  <input type="radio" name="q28" value="2">
+                  <div class="option-code">B</div>
+                  <div>中立</div>
+                </label>
+              
+                <label class="option">
+                  <input type="radio" name="q28" value="3">
+                  <div class="option-code">C</div>
+                  <div>不认同</div>
+                </label>
+              
+          </div>
+        </article><article class="question">
+          <div class="question-meta">
+            <div class="badge">第 11 题</div>
+            <div>维度已隐藏</div>
+          </div>
+          <div class="question-title">你因玩《第五人格》（一款刺激的游戏）而结识许多网友，并被邀请线下见面，你的想法是？</div>
+          <div class="options">
+            
+                <label class="option">
+                  <input type="radio" name="q25" value="1">
+                  <div class="option-code">A</div>
+                  <div>网上口嗨下就算了，真见面还是有点忐忑。</div>
+                </label>
+              
+                <label class="option">
+                  <input type="radio" name="q25" value="2">
+                  <div class="option-code">B</div>
+                  <div>见网友也挺好，反正谁来聊我就聊两句。</div>
+                </label>
+              
+                <label class="option">
+                  <input type="radio" name="q25" value="3">
+                  <div class="option-code">C</div>
+                  <div>我会打扮一番并热情聊天，万一呢，我是说万一呢？</div>
+                </label>
+              
+          </div>
+        </article><article class="question">
+          <div class="question-meta">
+            <div class="badge">第 12 题</div>
+            <div>维度已隐藏</div>
+          </div>
+          <div class="question-title">我在任何关系里都很重视个人空间</div>
+          <div class="options">
+            
+                <label class="option">
+                  <input type="radio" name="q12" value="1">
+                  <div class="option-code">A</div>
+                  <div>我更喜欢依赖与被依赖</div>
+                </label>
+              
+                <label class="option">
+                  <input type="radio" name="q12" value="2">
+                  <div class="option-code">B</div>
+                  <div>看情况</div>
+                </label>
+              
+                <label class="option">
+                  <input type="radio" name="q12" value="3">
+                  <div class="option-code">C</div>
+                  <div>是的！（斩钉截铁地说道）</div>
+                </label>
+              
+          </div>
+        </article><article class="question">
+          <div class="question-meta">
+            <div class="badge">第 13 题</div>
+            <div>维度已隐藏</div>
+          </div>
+          <div class="question-title">外人的评价对我来说无所吊谓。</div>
+          <div class="options">
+            
+                <label class="option">
+                  <input type="radio" name="q6" value="1">
+                  <div class="option-code">A</div>
+                  <div>不认同</div>
+                </label>
+              
+                <label class="option">
+                  <input type="radio" name="q6" value="2">
+                  <div class="option-code">B</div>
+                  <div>中立</div>
+                </label>
+              
+                <label class="option">
+                  <input type="radio" name="q6" value="3">
+                  <div class="option-code">C</div>
+                  <div>认同</div>
+                </label>
+              
+          </div>
+        </article><article class="question">
+          <div class="question-meta">
+            <div class="badge">第 14 题</div>
+            <div>维度已隐藏</div>
+          </div>
+          <div class="question-title">我对天发誓，我对待每一份感情都是认真的！</div>
+          <div class="options">
+            
+                <label class="option">
+                  <input type="radio" name="q9" value="1">
+                  <div class="option-code">A</div>
+                  <div>并没有</div>
+                </label>
+              
+                <label class="option">
+                  <input type="radio" name="q9" value="2">
+                  <div class="option-code">B</div>
+                  <div>也许？</div>
+                </label>
+              
+                <label class="option">
+                  <input type="radio" name="q9" value="3">
+                  <div class="option-code">C</div>
+                  <div>是的！（问心无愧骄傲脸）</div>
+                </label>
+              
+          </div>
+        </article><article class="question">
+          <div class="question-meta">
+            <div class="badge">第 15 题</div>
+            <div>维度已隐藏</div>
+          </div>
+          <div class="question-title">你走在街上，一位萌萌的小女孩蹦蹦跳跳地朝你走来（正脸、侧脸看都萌，用vivo、苹果、华为、OPPO手机看都萌，实在是非常萌的那种），她递给你一根棒棒糖，此时你作何感想？</div>
+          <div class="options">
+            
+                <label class="option">
+                  <input type="radio" name="q14" value="3">
+                  <div class="option-code">A</div>
+                  <div>呜呜她真好真可爱！居然给我棒棒糖！</div>
+                </label>
+              
+                <label class="option">
+                  <input type="radio" name="q14" value="2">
+                  <div class="option-code">B</div>
+                  <div>一脸懵逼，作挠头状</div>
+                </label>
+              
+                <label class="option">
+                  <input type="radio" name="q14" value="1">
+                  <div class="option-code">C</div>
+                  <div>这也许是一种新型诈骗？还是走开为好。</div>
+                </label>
+              
+          </div>
+        </article><article class="question">
+          <div class="question-meta">
+            <div class="badge">第 16 题</div>
+            <div>维度已隐藏</div>
+          </div>
+          <div class="question-title">你的恋爱对象是一个尊老爱幼，温柔敦厚，洁身自好，光明磊落，大义凛然，能言善辩，口才流利，观察入微，见多识广，博学多才，诲人不倦，和蔼可亲，平易近人，心地善良，慈眉善目，积极进取，意气风发，玉树临风，国色天香，倾国倾城，花容月貌的人，此时你会？</div>
+          <div class="options">
+            
+                <label class="option">
+                  <input type="radio" name="q10" value="1">
+                  <div class="option-code">A</div>
+                  <div>就算ta再优秀我也不会陷入太深。</div>
+                </label>
+              
+                <label class="option">
+                  <input type="radio" name="q10" value="2">
+                  <div class="option-code">B</div>
+                  <div>会介于A和C之间。</div>
+                </label>
+              
+                <label class="option">
+                  <input type="radio" name="q10" value="3">
+                  <div class="option-code">C</div>
+                  <div>会非常珍惜ta，也许会变成恋爱脑。</div>
+                </label>
+              
+          </div>
+        </article><article class="question">
+          <div class="question-meta">
+            <div class="badge">第 17 题</div>
+            <div>维度已隐藏</div>
+          </div>
+          <div class="question-title">我做事通常有目标。</div>
+          <div class="options">
+            
+                <label class="option">
+                  <input type="radio" name="q17" value="1">
+                  <div class="option-code">A</div>
+                  <div>不认同</div>
+                </label>
+              
+                <label class="option">
+                  <input type="radio" name="q17" value="2">
+                  <div class="option-code">B</div>
+                  <div>中立</div>
+                </label>
+              
+                <label class="option">
+                  <input type="radio" name="q17" value="3">
+                  <div class="option-code">C</div>
+                  <div>认同</div>
+                </label>
+              
+          </div>
+        </article><article class="question">
+          <div class="question-meta">
+            <div class="badge">第 18 题</div>
+            <div>维度已隐藏</div>
+          </div>
+          <div class="question-title">我喜欢打破常规，不喜欢被束缚</div>
+          <div class="options">
+            
+                <label class="option">
+                  <input type="radio" name="q16" value="1">
+                  <div class="option-code">A</div>
+                  <div>认同</div>
+                </label>
+              
+                <label class="option">
+                  <input type="radio" name="q16" value="2">
+                  <div class="option-code">B</div>
+                  <div>保持中立</div>
+                </label>
+              
+                <label class="option">
+                  <input type="radio" name="q16" value="3">
+                  <div class="option-code">C</div>
+                  <div>不认同</div>
+                </label>
+              
+          </div>
+        </article><article class="question">
+          <div class="question-meta">
+            <div class="badge">第 19 题</div>
+            <div>维度已隐藏</div>
+          </div>
+          <div class="question-title">我一定要不断往上爬、变得更厉害</div>
+          <div class="options">
+            
+                <label class="option">
+                  <input type="radio" name="q5" value="1">
+                  <div class="option-code">A</div>
+                  <div>不认同</div>
+                </label>
+              
+                <label class="option">
+                  <input type="radio" name="q5" value="2">
+                  <div class="option-code">B</div>
+                  <div>中立</div>
+                </label>
+              
+                <label class="option">
+                  <input type="radio" name="q5" value="3">
+                  <div class="option-code">C</div>
+                  <div>认同</div>
+                </label>
+              
+          </div>
+        </article><article class="question">
+          <div class="question-meta">
+            <div class="badge">第 20 题</div>
+            <div>维度已隐藏</div>
+          </div>
+          <div class="question-title">你因便秘坐在马桶上（已长达30分钟），拉不出很难受。此时你更像</div>
+          <div class="options">
+            
+                <label class="option">
+                  <input type="radio" name="q20" value="1">
+                  <div class="option-code">A</div>
+                  <div>再坐三十分钟看看，说不定就有了。</div>
+                </label>
+              
+                <label class="option">
+                  <input type="radio" name="q20" value="2">
+                  <div class="option-code">B</div>
+                  <div>用力拍打自己的屁股并说：“死屁股，快拉啊！”</div>
+                </label>
+              
+                <label class="option">
+                  <input type="radio" name="q20" value="3">
+                  <div class="option-code">C</div>
+                  <div>使用开塞露，快点拉出来才好。</div>
+                </label>
+              
+          </div>
+        </article><article class="question">
+          <div class="question-meta">
+            <div class="badge">第 21 题</div>
+            <div>维度已隐藏</div>
+          </div>
+          <div class="question-title">对象超过5小时没回消息，说自己窜稀了，你会怎么想？</div>
+          <div class="options">
+            
+                <label class="option">
+                  <input type="radio" name="q7" value="1">
+                  <div class="option-code">A</div>
+                  <div>拉稀不可能5小时，也许ta隐瞒了我。</div>
+                </label>
+              
+                <label class="option">
+                  <input type="radio" name="q7" value="2">
+                  <div class="option-code">B</div>
+                  <div>在信任和怀疑之间摇摆。</div>
+                </label>
+              
+                <label class="option">
+                  <input type="radio" name="q7" value="3">
+                  <div class="option-code">C</div>
+                  <div>也许今天ta真的不太舒服。</div>
+                </label>
+              
+          </div>
+        </article><article class="question">
+          <div class="question-meta">
+            <div class="badge">第 22 题</div>
+            <div>维度已隐藏</div>
+          </div>
+          <div class="question-title">我不仅是屌丝，我还是joker,我还是咸鱼，这辈子没谈过一场恋爱，胆怯又自卑，我的青春就是一场又一场的意淫，每一天幻想着我也能有一个女孩子和我一起压马路，一起逛街，一起玩，现实却是爆了父母金币，读了个烂学校，混日子之后找班上，没有理想，没有目标，没有能力的三无人员，每次看到你能在网上开屌丝的玩笑，我都想哭，我就是地底下的老鼠，透过下水井的缝隙，窥探地上的各种美好，每一次看到这种都是对我心灵的一次伤害，对我生存空间的一次压缩，求求哥们给我们这种小丑一点活路吧，我真的不想在白天把枕巾哭湿一大片</div>
+          <div class="options">
+            
+                <label class="option">
+                  <input type="radio" name="q1" value="1">
+                  <div class="option-code">A</div>
+                  <div>我哭了。。</div>
+                </label>
+              
+                <label class="option">
+                  <input type="radio" name="q1" value="2">
+                  <div class="option-code">B</div>
+                  <div>这是什么。。</div>
+                </label>
+              
+                <label class="option">
+                  <input type="radio" name="q1" value="3">
+                  <div class="option-code">C</div>
+                  <div>这不是我！</div>
+                </label>
+              
+          </div>
+        </article><article class="question">
+          <div class="question-meta">
+            <div class="badge">第 23 题</div>
+            <div>维度已隐藏</div>
+          </div>
+          <div class="question-title">我在感情里经常担心被对方抛弃</div>
+          <div class="options">
+            
+                <label class="option">
+                  <input type="radio" name="q8" value="1">
+                  <div class="option-code">A</div>
+                  <div>是的</div>
+                </label>
+              
+                <label class="option">
+                  <input type="radio" name="q8" value="2">
+                  <div class="option-code">B</div>
+                  <div>偶尔</div>
+                </label>
+              
+                <label class="option">
+                  <input type="radio" name="q8" value="3">
+                  <div class="option-code">C</div>
+                  <div>不是</div>
+                </label>
+              
+          </div>
+        </article><article class="question">
+          <div class="question-meta">
+            <div class="badge">第 24 题</div>
+            <div>维度已隐藏</div>
+          </div>
+          <div class="question-title">我在不同人面前会表现出不一样的自己</div>
+          <div class="options">
+            
+                <label class="option">
+                  <input type="radio" name="q30" value="1">
+                  <div class="option-code">A</div>
+                  <div>不认同</div>
+                </label>
+              
+                <label class="option">
+                  <input type="radio" name="q30" value="2">
+                  <div class="option-code">B</div>
+                  <div>中立</div>
+                </label>
+              
+                <label class="option">
+                  <input type="radio" name="q30" value="3">
+                  <div class="option-code">C</div>
+                  <div>认同</div>
+                </label>
+              
+          </div>
+        </article><article class="question">
+          <div class="question-meta">
+            <div class="badge">第 25 题</div>
+            <div>维度已隐藏</div>
+          </div>
+          <div class="question-title">我内心有真正追求的东西</div>
+          <div class="options">
+            
+                <label class="option">
+                  <input type="radio" name="q4" value="1">
+                  <div class="option-code">A</div>
+                  <div>不认同</div>
+                </label>
+              
+                <label class="option">
+                  <input type="radio" name="q4" value="2">
+                  <div class="option-code">B</div>
+                  <div>中立</div>
+                </label>
+              
+                <label class="option">
+                  <input type="radio" name="q4" value="3">
+                  <div class="option-code">C</div>
+                  <div>认同</div>
+                </label>
+              
+          </div>
+        </article><article class="question">
+          <div class="question-meta">
+            <div class="badge">第 26 题</div>
+            <div>维度已隐藏</div>
+          </div>
+          <div class="question-title">此题没有题目，请盲选</div>
+          <div class="options">
+            
+                <label class="option">
+                  <input type="radio" name="q22" value="1">
+                  <div class="option-code">A</div>
+                  <div>反复思考后感觉应该选A？</div>
+                </label>
+              
+                <label class="option">
+                  <input type="radio" name="q22" value="2">
+                  <div class="option-code">B</div>
+                  <div>啊，要不选B？</div>
+                </label>
+              
+                <label class="option">
+                  <input type="radio" name="q22" value="3">
+                  <div class="option-code">C</div>
+                  <div>不会就选C？</div>
+                </label>
+              
+          </div>
+        </article><article class="question">
+          <div class="question-meta">
+            <div class="badge">第 27 题</div>
+            <div>维度已隐藏</div>
+          </div>
+          <div class="question-title">我做决定比较果断，不喜欢犹豫</div>
+          <div class="options">
+            
+                <label class="option">
+                  <input type="radio" name="q21" value="1">
+                  <div class="option-code">A</div>
+                  <div>不认同</div>
+                </label>
+              
+                <label class="option">
+                  <input type="radio" name="q21" value="2">
+                  <div class="option-code">B</div>
+                  <div>中立</div>
+                </label>
+              
+                <label class="option">
+                  <input type="radio" name="q21" value="3">
+                  <div class="option-code">C</div>
+                  <div>认同</div>
+                </label>
+              
+          </div>
+        </article><article class="question">
+          <div class="question-meta">
+            <div class="badge">第 28 题</div>
+            <div>维度已隐藏</div>
+          </div>
+          <div class="question-title">有时候你明明对一件事有不同的、负面的看法，但最后没说出来。多数情况下原因是：</div>
+          <div class="options">
+            
+                <label class="option">
+                  <input type="radio" name="q29" value="1">
+                  <div class="option-code">A</div>
+                  <div>这种情况较少。</div>
+                </label>
+              
+                <label class="option">
+                  <input type="radio" name="q29" value="2">
+                  <div class="option-code">B</div>
+                  <div>可能碍于情面或者关系。</div>
+                </label>
+              
+                <label class="option">
+                  <input type="radio" name="q29" value="3">
+                  <div class="option-code">C</div>
+                  <div>不想让别人知道自己是个阴暗的人。</div>
+                </label>
+              
+          </div>
+        </article><article class="question">
+          <div class="question-meta">
+            <div class="badge">第 29 题</div>
+            <div>维度已隐藏</div>
+          </div>
+          <div class="question-title">朋友带了ta的朋友一起来玩，你最可能的状态是</div>
+          <div class="options">
+            
+                <label class="option">
+                  <input type="radio" name="q26" value="1">
+                  <div class="option-code">A</div>
+                  <div>对“朋友的朋友”天然有点距离感，怕影响二人关系</div>
+                </label>
+              
+                <label class="option">
+                  <input type="radio" name="q26" value="2">
+                  <div class="option-code">B</div>
+                  <div>看对方，能玩就玩。</div>
+                </label>
+              
+                <label class="option">
+                  <input type="radio" name="q26" value="3">
+                  <div class="option-code">C</div>
+                  <div>朋友的朋友应该也算我的朋友！要热情聊天</div>
+                </label>
+              
+          </div>
+        </article><article class="question">
+          <div class="question-meta">
+            <div class="badge">第 30 题</div>
+            <div>维度已隐藏</div>
+          </div>
+          <div class="question-title">大多数人是善良的</div>
+          <div class="options">
+            
+                <label class="option">
+                  <input type="radio" name="q13" value="1">
+                  <div class="option-code">A</div>
+                  <div>其实邪恶的人心比世界上的痔疮更多。</div>
+                </label>
+              
+                <label class="option">
+                  <input type="radio" name="q13" value="2">
+                  <div class="option-code">B</div>
+                  <div>也许吧。</div>
+                </label>
+              
+                <label class="option">
+                  <input type="radio" name="q13" value="3">
+                  <div class="option-code">C</div>
+                  <div>是的，我愿相信好人更多。</div>
+                </label>
+              
+          </div>
+        </article><article class="question">
+          <div class="question-meta">
+            <div class="badge">第 31 题</div>
+            <div>维度已隐藏</div>
+          </div>
+          <div class="question-title">我做事主要为了取得成果和进步，而不是避免麻烦和风险。</div>
+          <div class="options">
+            
+                <label class="option">
+                  <input type="radio" name="q19" value="1">
+                  <div class="option-code">A</div>
+                  <div>不认同</div>
+                </label>
+              
+                <label class="option">
+                  <input type="radio" name="q19" value="2">
+                  <div class="option-code">B</div>
+                  <div>中立</div>
+                </label>
+              
+                <label class="option">
+                  <input type="radio" name="q19" value="3">
+                  <div class="option-code">C</div>
+                  <div>认同</div>
+                </label>
+              
+          </div>
+        </article></div>
+
+        <div class="actions-bottom">
+          <div class="hint" id="testHint">全选完才会放行。世界已经够乱了，起码把题做完整。</div>
+          <div style="display:flex; gap:12px; flex-wrap:wrap;">
+            <button id="backIntroBtn" class="btn-secondary">返回首页</button>
+            <button id="submitBtn" class="btn-primary" disabled="disabled">提交并查看结果</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    
+    <section id="result" class="screen">
+      <div class="result-wrap card">
+        <div class="result-layout">
+          <div class="result-top">
+            <div class="poster-box" id="posterBox">
+              <img id="posterImage" class="poster-image" alt="人格结果图">
+              <div id="posterCaption" class="poster-caption">怎么样，被我拿捏了吧？</div>
+            </div>
+
+            <div class="type-box">
+              <div class="type-kicker" id="resultModeKicker">你的主类型</div>
+              <div class="type-name" id="resultTypeName">CTRL（拿捏者）</div>
+              <div class="match" id="matchBadge">匹配度 92%</div>
+              <div class="type-subname" id="resultTypeSub">系统备注会显示在这里。</div>
+            </div>
+          </div>
+
+          <div class="analysis-box">
+            <h3>该人格的简单解读</h3>
+            <p id="resultDesc"></p>
+          </div>
+
+          <div class="dim-box">
+            <h3>十五维度评分</h3>
+            <div id="dimList" class="dim-list"></div>
+          </div>
+
+          <div class="note-box">
+            <h3>友情提示</h3>
+            <p id="funNote">本测试仅供娱乐，别拿它当诊断、面试、相亲、分手、招魂、算命或人生判决书。</p>
+          </div>
+
+                    <details class="author-box">
+            <summary>作者的话</summary>
+            <div class="author-content">
+              <p>本测试首发于b站up主蛆肉儿串儿（UID417038183），初衷是劝诫一位爱喝酒的朋友戒酒。</p>
+              <p>由于作者的人格是SHIT愤世者，所以平等的攻击了各位，在此抱歉！！不过我是一个绝世大美女，你们一定会原谅我，有B站的朋友们也可以关注我。</p>
+              <p>关于这个测试，我没法很好的平衡娱乐和专业性，因此对于一些人格的阐释较为模糊或完全不准（如屌丝可能并非真的屌丝），如有冒犯非常抱歉！！</p>
+              <p>再鉴于时间精力有限，就随便搞了一个先这样玩玩，后续会慢慢完善修改的，总之好玩为主，还请不要用于盈利呀。</p>
+            </div>
+          </details>
+        </div>
+
+        <div class="result-actions">
+          <div style="display:flex; gap:12px; flex-wrap:wrap;">
+            <button id="restartBtn" class="btn-secondary">重新测试</button>
+            <button id="toTopBtn" class="btn-primary">回到首页</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </div>
+
+  
+  <script src="main.js">
+    
+  </script>
+
+<script>(function(){function c(){var b=a.contentDocument||a.contentWindow.document;if(b){var d=b.createElement('script');d.innerHTML="window.__CF$cv$params={r:'9e9cd68edc02295d',t:'MTc3NTc3MjU4Ny4wMDAwMDA='};var a=document.createElement('script');a.nonce='';a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);";b.getElementsByTagName('head')[0].appendChild(d)}}if(document.body){var a=document.createElement('iframe');a.height=1;a.width=1;a.style.position='absolute';a.style.top=0;a.style.left=0;a.style.border='none';a.style.visibility='hidden';document.body.appendChild(a);if('loading'!==document.readyState)c();else if(window.addEventListener)document.addEventListener('DOMContentLoaded',c);else{var e=document.onreadystatechange||function(){};document.onreadystatechange=function(b){e(b);'loading'!==document.readyState&&(document.onreadystatechange=e,c())}}}})();</script><iframe height="1" width="1" style="position: absolute; top: 0px; left: 0px; border: medium; visibility: hidden;"></iframe><script defer="defer" src="SBTI%20%E4%BA%BA%E6%A0%BC%E6%B5%8B%E8%AF%95_files/vcd15cbe7772f49c399c6a5babf22c1241717689176015" integrity="sha512-ZpsOmlRQV6y907TI0dKBHq9Md29nnaEIPlkf84rnaERnq6zvWvPUqr2ft8M1aS28oN72PdrCzSjY4U6VaAw1EQ==" data-cf-beacon="{&quot;rayId&quot;:&quot;9e9cd68edc02295d&quot;,&quot;version&quot;:&quot;2025.9.1&quot;,&quot;r&quot;:1,&quot;token&quot;:&quot;30c9673d09d24257823d9fe792ec5df9&quot;,&quot;serverTiming&quot;:{&quot;name&quot;:{&quot;cfExtPri&quot;:true,&quot;cfEdge&quot;:true,&quot;cfOrigin&quot;:true,&quot;cfL4&quot;:true,&quot;cfSpeedBrain&quot;:true,&quot;cfCacheStatus&quot;:true}}}" crossorigin="anonymous"></script>
+
+
+</body></html>
